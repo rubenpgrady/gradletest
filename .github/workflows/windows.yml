@@ -18,14 +18,14 @@ jobs:
           distribution: 'temurin'
           cache: gradle
       - name: List files before
-        shell: cmd
-        run: dir /s
+        shell: pwsh
+        run: (Get-ChildItem -Recurse).FullName
       - name: Build with Gradle
         shell: cmd
         run: gradlew.bat build --no-daemon
       - name: List files after
         shell: pwsh
-        run: gci -Recurse
+        run: (Get-ChildItem -Path . -Recurse).FullName
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
