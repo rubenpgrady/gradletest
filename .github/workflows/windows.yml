@@ -20,6 +20,7 @@ jobs:
       - name: List files before
         run: dir
       - name: Build with Gradle
+        shell: cmd
         run: gradlew.bat
       - name: List files after
         run: dir
