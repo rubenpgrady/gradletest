@@ -25,7 +25,7 @@ jobs:
         run: gradlew.bat build --no-daemon
       - name: List files after
         shell: pwsh
-        run: gci
+        run: gci -Recurse
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
