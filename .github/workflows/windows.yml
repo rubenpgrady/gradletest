@@ -18,9 +18,14 @@ jobs:
           distribution: 'temurin'
           cache: gradle
       - name: List files before
-        run: dir
+        run: dir /s .
       - name: Build with Gradle
         shell: cmd
         run: gradlew.bat
       - name: List files after
-        run: dir
+        run: dir /s .
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release
+          path: app/build/outputs/apk/release/app-release-unsigned.apk
