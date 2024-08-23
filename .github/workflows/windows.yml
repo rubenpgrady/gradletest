@@ -22,10 +22,10 @@ jobs:
         run: dir /s
       - name: Build with Gradle
         shell: cmd
-        run: gradlew.bat build
+        run: gradlew.bat build --no-daemon
       - name: List files after
-        shell: cmd
-        run: dir /s
+        shell: pwsh
+        run: gci
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
