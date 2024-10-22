@@ -8,13 +8,13 @@ repositories {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 17
     defaultConfig {
         applicationId 'org.gradle.samples'
         namespace 'org.gradle.samples'
-        minSdkVersion 16
+        minSdkVersion 17
         //noinspection ExpiredTargetSdkVersion
-        targetSdkVersion 30
+        targetSdkVersion 17
         versionCode 1
         versionName '1.0'
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
