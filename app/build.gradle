@@ -37,6 +37,10 @@ android {
             minifyEnabled false
             signingConfig signingConfigs.release
         }
+        releaseUnsigned.initWith(buildTypes.release)
+        releaseUnsigned {
+            signingConfig null
+        }
     }
 }
 
