@@ -21,10 +21,10 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file('../your-keystore.jks')
-            storePassword 'your-store-password'
-            keyAlias 'your-key-alias'
-            keyPassword 'your-key-password'
+            storeFile file('../keystore.jks')
+            storePassword 'secret-store-password'
+            keyAlias 'release-key'
+            keyPassword 'secret-your-key-password'
         }
     }
     buildTypes {
