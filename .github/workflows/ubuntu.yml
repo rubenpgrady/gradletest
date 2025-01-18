@@ -19,8 +19,10 @@ jobs:
           cache: gradle
       - name: List files before
         run: find .
-      - name: Generate keystore
-        run: keytool -noprompt -genkey -v -keystore app.keystore -storepass storepassjustfortestingshouldbesecret -alias release-key -keyalg RSA -keysize 2048 -validity 10000
+      - name: Generate keystore 1
+        run: keytool -genkeypair -v -keystore your-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias your-key-alias -storepass your-store-password -keypass your-key-password -dname "CN=Your Name, OU=Your Organization, O=Your Company, L=Your City, S=Your State, C=Your Country"
+      - name: Generate keystore 2
+        run: keytool -noprompt -genkey -v -keystore app.keystore -storepass storepassjustfortestingshouldbesecret -alias release-key -keypass keypassjustfortestingshouldbesecret -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Your Name, OU=Your Organization, O=Your Company, L=Your City, S=Your State, C=Your Country"
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
