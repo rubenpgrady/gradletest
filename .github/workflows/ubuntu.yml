@@ -20,7 +20,7 @@ jobs:
       - name: List files before
         run: find .
       - name: Generate keystore
-        run: keytool -genkey -v -keystore app.keystore -alias release-key -keyalg RSA -keysize 2048 -validity 10000
+        run: keytool -genkey -v -keystore app.keystore -storepass storepassjustfortestingshouldbesecret -alias release-key -keypass keypassjustfortestingshouldbesecret -keyalg RSA -keysize 2048 -validity 10000
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
