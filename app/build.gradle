@@ -24,7 +24,7 @@ android {
             storeFile file('../keystore.jks')
             storePassword 'secret-store-password'
             keyAlias 'release-key'
-            keyPassword 'secret-your-key-password'
+            keyPassword 'secret-key-password'
         }
     }
     buildTypes {
