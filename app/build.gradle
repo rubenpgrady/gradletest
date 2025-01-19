@@ -35,6 +35,7 @@ android {
     buildTypes {
         release {
             debuggable false
+            shrinkResources true
             minifyEnabled true
             signingConfig signingConfigs.release
         }
