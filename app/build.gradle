@@ -2,7 +2,8 @@ plugins {
     id('com.android.application') version '8.3.0'
 }
 
-tasks.withType(AbstractArchiveTask).configureEach {  // Make build reproducible https://docs.gradle.org/current/userguide/working_with_files.html#sec:reproducible_archives
+// Make build reproducible, refer to https://docs.gradle.org/current/userguide/working_with_files.html#sec:reproducible_archives
+tasks.withType(AbstractArchiveTask).configureEach {
     preserveFileTimestamps = false
     reproducibleFileOrder = true
 }
@@ -18,7 +19,8 @@ android {
         applicationId 'org.gradle.samples'
         namespace 'org.gradle.samples'
         minSdkVersion 16
-        //noinspection ExpiredTargetSdkVersion
+        // Refer to https://docs.clover.com/dev/docs/setting-android-sdk-versions#troubleshoot-issues-with-target-sdk-level
+        // noinspection ExpiredTargetSdkVersion
         targetSdkVersion 30
         versionCode 1
         versionName '1.0'
