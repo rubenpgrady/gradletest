@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF0000</color><!-- color of title bar -->
-    <color name="colorPrimaryDark">#00FF00</color><!-- unknown -->
+    <!--<color name="colorPrimary">#FF0000</color><!-- color of title bar
+    <color name="colorPrimaryDark">#00FF00</color><!-- unknown
     <color name="colorAccent">#0000FF</color><!-- unknown -->
     <!-- background color for example should also be set here and then in styles.xml, no? where do i get more info about the theme? -->
 </resources>
