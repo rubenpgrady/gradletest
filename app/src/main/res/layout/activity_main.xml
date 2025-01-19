@@ -7,6 +7,7 @@
     android:layout_height="match_parent" 
     tools:context=".MainActivity">
 
+    <!-- Refer to https://stackoverflow.com/questions/6025818/select-copy-text-in-a-textview/37116712#37116712 -->
     <TextView
         android:id="@+id/text_view"
         android:layout_width="0dp"
@@ -15,12 +16,12 @@
         android:padding="16dp"
         android:textSize="16sp"
         android:textColor="@android:color/black"
-        android:background="@android:color/white"
+        android:background="@android:color/transparent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center"
+        android:gravity="top|start"
         android:enabled="true"
         android:textIsSelectable="true"
         android:focusable="true"
