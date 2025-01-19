@@ -3,6 +3,7 @@ package org.gradle.samples;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.content.pm.PackageManager;
 
 public class MainActivity extends AppCompatActivity {
 
