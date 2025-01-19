@@ -34,6 +34,7 @@ android {
     }
     buildTypes {
         release {
+            debuggable false
             minifyEnabled true
             signingConfig signingConfigs.release
         }
