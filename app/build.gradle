@@ -21,7 +21,7 @@ android {
         minSdkVersion 16
         // Refer to https://docs.clover.com/dev/docs/setting-android-sdk-versions#troubleshoot-issues-with-target-sdk-level
         // noinspection ExpiredTargetSdkVersion
-        targetSdkVersion 30
+        targetSdkVersion 16
         versionCode 1
         versionName '1.0'
     }
