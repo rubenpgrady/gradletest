@@ -1,7 +1,7 @@
 <resources>
     <!-- Refer to https://developer.android.com/develop/ui/views/theming/themes -->
     <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.AppCompat">
         <!-- For example: <item name="colorPrimary">@color/colorPrimary</item> -->
         <!-- Adjust accordingly in colors.xml -->
     </style>
