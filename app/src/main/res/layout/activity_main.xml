@@ -17,7 +17,7 @@
         android:lines="5"
         android:scrollbars="vertical"
         android:padding="16dp"
-        android:editable="false"
+        android:enabled="false"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
